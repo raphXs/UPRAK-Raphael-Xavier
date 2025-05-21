@@ -14,7 +14,7 @@ function Content() {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then((res) => res.json())
-      .then((data) => setPosts(data.slice(0, 6))) // hanya ambil 6 sesuai jumlah gambar
+      .then((data) => setPosts(data.slice(0, 6))) 
       .catch((err) => console.error(err));
   }, []);
 
